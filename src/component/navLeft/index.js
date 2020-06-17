@@ -5,14 +5,15 @@ import './index.less'
 import MenuConfig from './../../config/menuConfig'
 const SubMenu = Menu.SubMenu
 export default class NavLeft extends React.Component{
-    componentWillMount() {
-        const menuTreeNode = this.renderMeun(MenuConfig)
+    componentWillMount(){
+        const menuTreeNode = this.renderMenu(MenuConfig);
+
         this.setState({
             menuTreeNode
         })
     }
     // 菜单渲染
-    renderMeun = (data)=>{
+    renderMenu = (data)=>{
         return data.map((item)=>{
             if(item.children){
                return(
@@ -21,7 +22,9 @@ export default class NavLeft extends React.Component{
                    </SubMenu>
                )
             }
-            return <Menu.Item title={item.title} key={item.key}></Menu.Item>
+            return  <Menu.Item key="1">
+                <span>{item.title}</span>
+            </Menu.Item>
         })
     }
     render() {
