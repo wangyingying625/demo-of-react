@@ -1,9 +1,10 @@
 import React from "react";
+import './index.less'
 export default class Footer extends React.Component{
     render() {
         return (
-            <div>
-                footer
+            <div className='footer'>
+                footer--版权所有
             </div>
         );
     }

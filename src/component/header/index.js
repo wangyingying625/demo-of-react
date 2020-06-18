@@ -1,6 +1,7 @@
 import React from "react";
 import {Col, Row} from "antd";
 import './index.less';
+import axios from '../../axios/index'
 import Util from '../../util/util'
 export default class Header extends React.Component{
     state ={}

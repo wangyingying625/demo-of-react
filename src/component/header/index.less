@@ -1,7 +1,7 @@
 .main {
 
   .header {
-
+    background-color: #fff;
     .header-top {
       height: 60px;
       line-height: 60px;
@@ -20,7 +20,17 @@
       padding: 0 20px;
 
       .bottom-title {
+        font-size: 18px;
         text-align: center;
+        &:after{
+          position: absolute;
+          content: '';
+          left: 80px;
+          top: 49px;
+          border-top: 10px solid #fff;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+        }
       }
 
       .bottom-data {
@@ -32,4 +42,3 @@
     }
   }
 }
-
